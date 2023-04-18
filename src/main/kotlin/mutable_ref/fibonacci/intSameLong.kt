@@ -2,30 +2,30 @@ package mutable_ref.fibonacci
 
 import mutable_ref.MutableMfvcWrapper
 
-fun fibonacciSame(n: Int): Int {
+fun fibonacciSame(n: Float): Float {
     val sharedWrapper = MutableMfvcWrapper()
     return when {
         n < 0 -> error("Wrong n: $n")
-        n == 0 -> 0
+        n == 0.0f -> 0.0f
         else -> {
-            fun impl(n: Int, sharedWrapper: MutableMfvcWrapper) {
-                if (n == 1) {
-                    sharedWrapper.long0 = 0.toLong().shl(32) or 1.toLong().and(0xFFFFFFFF)
+            fun impl(n: Float, sharedWrapper: MutableMfvcWrapper) {
+                if (n == 1.0f) {
+                    sharedWrapper.long0 = 0.0f.toRawBits().toLong().shl(32) or 1.0f.toRawBits().toLong().and(0xFFFFFFFF)
                 } else {
                     impl(n - 1, sharedWrapper)
-                    val x = sharedWrapper.long0.shr(32).toInt()
-                    val y = sharedWrapper.long0.toInt()
-                    sharedWrapper.long0 = y.toLong().shl(32) or (x + y).toLong().and(0xFFFFFFFF)
+                    val x = Float.fromBits(sharedWrapper.long0.shr(32).toInt())
+                    val y = Float.fromBits(sharedWrapper.long0.toInt())
+                    sharedWrapper.long0 = y.toRawBits().toLong().shl(32) or (x + y).toRawBits().toLong().and(0xFFFFFFFF)
                 }
             }
             impl(n, sharedWrapper)
-            sharedWrapper.long0.toInt()
+            Float.fromBits(sharedWrapper.long0.toInt())
         }
     }
 }
 
 fun main() {
     for (i in 0..10) {
-        println(fibonacciSame(i))
+        println(fibonacciSame(i.toFloat()))
     }
 }

@@ -39,3 +39,7 @@ java {
         languageVersion.set(JavaLanguageVersion.of(17))
     }
 }
+
+jmh {
+    includes = ["Fibonacci"]
+}

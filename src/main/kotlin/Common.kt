@@ -1,8 +1,8 @@
 import java.awt.Color
 import java.awt.Graphics2D
 
-const val fibonacciInputInt = 45
-const val fibonacciInputLong = 45L
+const val fibonacciInputInt = 45.0f
+const val fibonacciInputLong = 45.0
 
 const val screenWidth = 1920
 const val screenHeight = 1024

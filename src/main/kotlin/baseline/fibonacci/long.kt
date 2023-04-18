@@ -1,18 +1,18 @@
 package baseline.fibonacci
 
-private data class LongPair(val x: Long, val y: Long)
-fun fibonacci(n: Long): Long = when {
+private data class DoublePair(val x: Double, val y: Double)
+fun fibonacci(n: Double): Double = when {
     n < 0 -> error("Wrong n: $n")
-    n == 0L -> 0
+    n == 0.0 -> 0.0
     else -> {
-        fun impl(n: Long): LongPair =
-            if (n == 1L) LongPair(0, 1) else impl(n - 1).let { LongPair(it.y, it.x + it.y) }
+        fun impl(n: Double): DoublePair =
+            if (n == 1.0) DoublePair(0.0, 1.0) else impl(n - 1).let { DoublePair(it.y, it.x + it.y) }
         impl(n).y
     }
 }
 
 fun main() {
     for (i in 0L..10L) {
-        println(fibonacci(i))
+        println(fibonacci(i.toDouble()))
     }
 }

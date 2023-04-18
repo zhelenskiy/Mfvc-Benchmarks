@@ -1,23 +1,23 @@
 package long_pack.fibonacci
 
 @JvmInline
-private value class IntPair private constructor(private val storage: Long) {
-    constructor(x: Int, y: Int) : this(x.toLong().shl(32) or y.toLong().and(0xFFFFFFFF))
-    inline val x get() = storage.shr(32).toInt()
-    inline val y get() = storage.toInt()
+private value class FloatPair private constructor(private val storage: Long) {
+    constructor(x: Float, y: Float) : this(x.toRawBits().toLong().shl(32) or y.toRawBits().toLong().and(0xFFFFFFFF))
+    inline val x get() = Float.fromBits(storage.shr(32).toInt())
+    inline val y get() = Float.fromBits(storage.toInt())
 }
-fun fibonacci(n: Int): Int = when {
+fun fibonacci(n: Float): Float = when {
     n < 0 -> error("Wrong n: $n")
-    n == 0 -> 0
+    n == 0.0f -> 0.0f
     else -> {
-        fun impl(n: Int): IntPair =
-            if (n == 1) IntPair(0, 1) else impl(n - 1).let { IntPair(it.y, it.x + it.y) }
+        fun impl(n: Float): FloatPair =
+            if (n == 1.0f) FloatPair(0.0f, 1.0f) else impl(n - 1).let { FloatPair(it.y, it.x + it.y) }
         impl(n).y
     }
 }
 
 fun main() {
     for (i in 0..10) {
-        println(fibonacci(i))
+        println(fibonacci(i.toFloat()))
     }
 }

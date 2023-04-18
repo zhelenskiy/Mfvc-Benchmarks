@@ -3,18 +3,18 @@
 package value_preserve_box.fibonacci
 
 @JvmInline
-private value class IntPair(val x: Int, val y: Int)
-fun fibonacci(n: Int): Int = when {
+private value class FloatPair(val x: Float, val y: Float)
+fun fibonacci(n: Float): Float = when {
     n < 0 -> error("Wrong n: $n")
-    n == 0 -> 0
+    n == 0.0f -> 0.0f
     else -> {
-        fun impl(n: Int): IntPair = if (n == 1) {
-            var orNull: IntPair? = null
-            if (orNull == null) orNull = IntPair(0, 1)
+        fun impl(n: Float): FloatPair = if (n == 1.0f) {
+            var orNull: FloatPair? = null
+            if (orNull == null) orNull = FloatPair(0.0f, 1.0f)
             orNull
         } else {
-            var orNull: IntPair? = null
-            if (orNull == null) orNull = impl(n - 1).let { IntPair(it.y, it.x + it.y) }
+            var orNull: FloatPair? = null
+            if (orNull == null) orNull = impl(n - 1).let { FloatPair(it.y, it.x + it.y) }
             orNull
         }
         impl(n).y
@@ -23,6 +23,6 @@ fun fibonacci(n: Int): Int = when {
 
 fun main() {
     for (i in 0..10) {
-        println(fibonacci(i))
+        println(fibonacci(i.toFloat()))
     }
 }
