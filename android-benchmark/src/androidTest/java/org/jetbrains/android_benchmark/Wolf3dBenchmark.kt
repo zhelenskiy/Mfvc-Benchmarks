@@ -106,6 +106,17 @@ class Wolf3dBenchmark {
 
 
     @Test
+    fun valueOnlyBodiesFloat() = benchmarkRule.measureRepeated {
+        value_only_bodies.rendering.heavyActionFloat(Graphics)
+    }
+
+    @Test
+    fun valueOnlyBodiesDouble() = benchmarkRule.measureRepeated {
+        value_only_bodies.rendering.heavyActionDouble(Graphics)
+    }
+
+
+    @Test
     fun valueInlineFloat() = benchmarkRule.measureRepeated {
         value_inline.rendering.heavyActionFloat(Graphics)
     }
@@ -113,6 +124,17 @@ class Wolf3dBenchmark {
     @Test
     fun valueInlineDouble() = benchmarkRule.measureRepeated {
         value_inline.rendering.heavyActionDouble(Graphics)
+    }
+
+
+    @Test
+    fun valueInlineOnlyBodiesFloat() = benchmarkRule.measureRepeated {
+        value_inline_only_bodies.rendering.heavyActionFloat(Graphics)
+    }
+
+    @Test
+    fun valueInlineOnlyBodiesDouble() = benchmarkRule.measureRepeated {
+        value_inline_only_bodies.rendering.heavyActionDouble(Graphics)
     }
 
 

@@ -1,84 +1,132 @@
-05-10 03:12:04.916 23197 23221 I TestRunner: started: mutableSpecificRefInt(org.jetbrains.android_benchmark.AckermannBenchmark)
-05-10 03:12:04.918 23197 23197 I MonitoringInstr: Activities that are still in CREATED to STOPPED: 1
-05-10 03:12:04.918 23197 23197 I MonitoringInstr: Finishing activity: androidx.benchmark.IsolationActivity@2611a25
-05-10 03:12:04.924 23197 23221 I GrantPermissionCallable: Permission: android.permission.WRITE_EXTERNAL_STORAGE is already granted!
-05-10 03:12:04.924 23197 23221 I GrantPermissionCallable: Permission: android.permission.READ_EXTERNAL_STORAGE is already granted!
-05-10 03:12:04.924 23197 23221 D Benchmark: -- Running org.jetbrains.android_benchmark.AckermannBenchmark#mutableSpecificRefInt --
-05-10 03:12:04.925 23197 23221 D PerfettoCapture: Supported ABIs: arm64-v8a, armeabi-v7a, armeabi
-05-10 03:12:04.925 23197 23221 D PerfettoCapture: Recording perfetto trace
-05-10 03:12:04.961 23197 23221 I PerfettoCapture: Cleanup perfetto before starting.
-05-10 03:12:04.963  5679  7439 D SemWifiUsabilityStatsMonitor: onWifiUsabilityStats - seqNum 11473, isSameBssidAndFreq true
-05-10 03:12:04.967  5679  6237 I SemWifiLinkQualityMonitor: Link Qos Query: 0.037 ms / 216.500 Mbps (433 / 0.000 / 2.000)
-05-10 03:12:05.005  5679  6193 I ChimeraAggressivePolicyHandler: executePolicy() - triggerSource: TRIGGER_SOURCE_LMKD
-05-10 03:12:05.007  5679  6193 I ChimeraAggressivePolicyHandler: available memory: 893148, free memory target: 870400, quit chimera
-05-10 03:12:05.151 23197 23221 I PerfettoCapture: Perfetto output file cleanup -
-05-10 03:12:05.151 23197 23221 I PerfettoCapture: Starting perfetto tracing with cmd: cat /storage/emulated/0/Android/data/org.jetbrains.android_benchmark.test/cache/trace_config.pb | perfetto --background -c - -o /data/misc/perfetto-traces/trace_output.pb
-05-10 03:12:05.323 25359 25359 I perfetto:    perfetto_cmd.cc:1001 Connected to the Perfetto traced service, starting tracing
-05-10 03:12:05.325  5440  5440 I perfetto: ing_service_impl.cc:953 Configured tracing session 26, #sources:4, duration:0 ms, #buffers:2, total buffer size:36864 KB, total sessions:1, uid:2000 session name: ""
-05-10 03:12:05.326  5438  5438 I perfetto:  probes_producer.cc:139 Ftrace setup (target_buf=51)
-05-10 03:12:05.372 23197 23221 I PerfettoCapture: Perfetto output - 25359
-05-10 03:12:05.372 23197 23221 I PerfettoCapture: EXITCODE=0
-05-10 03:12:05.388  4389  4389 I hwservicemanager: getTransport: Cannot find entry android.hardware.atrace@1.0::IAtraceDevice/default in either framework or device VINTF manifest.
-05-10 03:12:05.413  5438  5438 I perfetto:    ftrace_procfs.cc:335 enabled ftrace in /sys/kernel/tracing/
-05-10 03:12:05.429  5679  5748 W libprocessgroup: Failed to open /dev/blkio//cgroup.procs: No such file or directory
-05-10 03:12:05.457 12790 12790 I SCS@AiSearch user 0: (ObserverWorker::AOSP_MP) [main] entering in startWork():
-05-10 03:12:05.458 12790 12790 I SCS@AiSearch user 0: (BaseCollector::AOSP_MP) [main] entering in onChange():
-05-10 03:12:05.460 12790 12831 I SCS@AiSearch user 0: (BaseCollector::AOSP_MP) [AOSP_MP-0] entering in collectChanges():
-05-10 03:12:05.466  5679  8453 D PackageManager: setEnabledSetting : userId = 0 packageName = com.samsung.android.scs cmp = androidx.work.impl.background.systemalarm.RescheduleReceiver newState = 1 callingPackage = 10380/com.samsung.android.scs
-05-10 03:12:05.467  5679  8453 D ApplicationPolicy: getApplicationStateEnabled : pkg = com.samsung.android.scs userId : 0
-05-10 03:12:05.469  5679  8453 D ApplicationPolicy: getApplicationComponentState : pkg = com.samsung.android.scs userId : 0
-05-10 03:12:05.495 23197 23221 I PerfettoCapture: Perfetto tracing started successfully with pid 25359.
-05-10 03:12:05.566 12790 12831 I SCS@AiSearch user 0: (BaseCollector::AOSP_MP) fetchInternal values : maxSyncId: 1000008667 indexCount: 891 sourceCount: 891
-05-10 03:12:05.600 23197 23221 I PerfettoCapture: /sys/kernel/tracing/tracing_on = 1, polled 0 times, capture fully started
-05-10 03:12:05.602 23197 23221 D Benchmark: Set 23221 (Bench thread) to priority -20. Was -8, now -20
-05-10 03:12:05.603 23197 23221 D Benchmark: Set 23206 (Jit) to priority -15. Was 9, now -15
-05-10 03:12:05.637 12790 12831 I SCS@AiSearch user 0: (IndexManager) [AOSP_MP-0] entering in addIndex():
-05-10 03:12:05.641 23197 23221 I _benchmark.test: Explicit concurrent copying GC freed 147160(2847KB) AllocSpace objects, 1(20KB) LOS objects, 67% free, 2950KB/9094KB, paused 381us,119us total 38.312ms
-05-10 03:12:05.644 12790 12831 I SCS@AiSearch user 0: (BaseCollector::AOSP_MP) fetch: fetching took  129 ms
-05-10 03:12:05.644 12790 12831 I SCS@AiSearch user 0: (BaseCollector::AOSP_MP) fetchChanges: applied 0 items
-05-10 03:12:05.645 12790 12831 I SCS@AiSearch user 0: (BaseCollector::AOSP_MP) Collect finished. Result: true
-05-10 03:12:05.648 12790 12826 I WM-WorkerWrapper: Worker result SUCCESS for Work [ id=3e16063a-72c4-4f2b-a5bf-7a940b7895f9, tags={ com.sec.android.app.myfiles, com.samsung.android.scs.ai.search.data.collector.ObserverWorker } ]
-05-10 03:12:05.653 12790 12831 I SCS@AiSearch user 0: (BaseCollector::AOSP_MP) enqueue ObserverWorker name: com.sec.android.app.myfiles, policy: APPEND_OR_REPLACE
-05-10 03:12:05.703  5679  5877 D PackageManager: setEnabledSetting : userId = 0 packageName = com.samsung.android.scs cmp = androidx.work.impl.background.systemalarm.RescheduleReceiver newState = 1 callingPackage = 10380/com.samsung.android.scs
-05-10 03:12:05.704  5679  5877 D ApplicationPolicy: getApplicationStateEnabled : pkg = com.samsung.android.scs userId : 0
-05-10 03:12:05.705  5679  5877 D ApplicationPolicy: getApplicationComponentState : pkg = com.samsung.android.scs userId : 0
-05-10 03:12:05.772  5322  5322 E sehhealth-service: Could not open /sys/class/power_supply/battery/lrp
-05-10 03:12:07.983  5679  7439 D SemWifiUsabilityStatsMonitor: onWifiUsabilityStats - seqNum 11474, isSameBssidAndFreq true
-05-10 03:12:07.985  5679  6237 I SemWifiLinkQualityMonitor: Link Qos Query: 0.028 ms / 288.667 Mbps (433 / 0.000 / 1.500)
-05-10 03:12:10.211 23197 23221 D Benchmark: timeNs[ 0:10]: 22429 21748 22194 22216 21888 22990 21855 22520 21903 21842
-05-10 03:12:10.211 23197 23221 D Benchmark: timeNs[10:20]: 23082 21846 21832 22609 22618 22435 22329 21768 22588 21864
-05-10 03:12:10.211 23197 23221 D Benchmark: timeNs[20:30]: 21872 22788 21899 22829 21837 21907 23041 21888 21891 22554
-05-10 03:12:10.211 23197 23221 D Benchmark: timeNs[30:40]: 21864 22607 22254 21826 22635 21884 21940 22644 21838 22398
-05-10 03:12:10.211 23197 23221 D Benchmark: timeNs[40:50]: 21862 21854 22838 21872 21916 22563 21853 22492 22204 21721
-05-10 03:12:10.498 23197 23221 W _benchmark.test: Suspending all threads took: 9.573ms
-05-10 03:12:10.685 23197 23221 D Benchmark: allocationCount[ 0:10]: 43 43 43 43 43
-05-10 03:12:10.685 23197 23221 D Benchmark: Set 23221 (Bench thread) to priority -8. Was -20, now -8
-05-10 03:12:10.685 23197 23221 D Benchmark: Set 23206 (Jit) to priority 9. Was -15, now 9
-05-10 03:12:10.685 23197 23221 D Benchmark: Warmup: t=0.250, iter=6286, fastAvg=25813, slowAvg=25405
-05-10 03:12:10.685 23197 23221 I PerfettoCapture: Stopping perfetto.
-05-10 03:12:10.731 25359 25359 I perfetto:    perfetto_cmd.cc:1168 SIGINT/SIGTERM received: disabling tracing.
-05-10 03:12:10.735 23197 23221 D Benchmark: kill -TERM command output -
-05-10 03:12:10.744  5438  5438 I perfetto:  probes_producer.cc:396 Producer stop (id=101)
-05-10 03:12:10.746  5438  5438 I perfetto:    ftrace_procfs.cc:342 disabled ftrace in /sys/kernel/tracing/
-05-10 03:12:10.828  4389  4389 I hwservicemanager: getTransport: Cannot find entry android.hardware.atrace@1.0::IAtraceDevice/default in either framework or device VINTF manifest.
-05-10 03:12:10.836  5438  5438 I perfetto:  probes_producer.cc:396 Producer stop (id=102)
-05-10 03:12:10.837  5438  5438 I perfetto:  probes_producer.cc:396 Producer stop (id=103)
-05-10 03:12:10.861 25359 25359 I perfetto:    perfetto_cmd.cc:1124 Trace written into the output file
-05-10 03:12:10.863  5440  5440 I perfetto: ng_service_impl.cc:2426 Tracing session 26 ended, total sessions:0
-05-10 03:12:10.877 23197 23221 I PerfettoCapture: Writing to /storage/emulated/0/Android/data/org.jetbrains.android_benchmark.test/cache/AckermannBenchmark_mutableSpecificRefInt_2023-05-10-01-12-10.perfetto-trace.
-05-10 03:12:10.948 23197 23221 D Benchmark: Copying /storage/emulated/0/Android/data/org.jetbrains.android_benchmark.test/cache/AckermannBenchmark_mutableSpecificRefInt_2023-05-10-01-12-10.perfetto-trace to /sdcard/Android/media/org.jetbrains.android_benchmark.test/additional_test_output/AckermannBenchmark_mutableSpecificRefInt_2023-05-10-01-12-10.perfetto-trace
-05-10 03:12:11.003  8330 24129 W MediaProvider: isAppCloneUserPair for user 0: false
-05-10 03:12:11.007  5679  7439 D SemWifiUsabilityStatsMonitor: onWifiUsabilityStats - seqNum 11475, isSameBssidAndFreq true
-05-10 03:12:11.013  5679  6237 I SemWifiLinkQualityMonitor: Link Qos Query: 0.028 ms / 288.667 Mbps (433 / 0.000 / 1.500)
-05-10 03:12:11.014  6397  6397 D NetworkController.WifiSignalController: notifyListener: visible=true, connected=true, inetCondition=1, isDefault=true, wifiTestReported=true, receivedInetCondition=-1, hideDuringMobileSwitching=false
-05-10 03:12:11.020  6397  6497 D Tile.WifiTile: handleUpdateState isTransient=false transientEnabling =false cb.isTransient=false state.state = 2 mStateBeforeClick.value =false enabled =true
-05-10 03:12:11.038  5679  8453 D SyncManager: userId - 0 auto - true
-05-10 03:12:11.108 23197 23221 I Benchmark: AckermannBenchmark.mutableSpecificRefInt[Metric (timeNs) results: median 21928.603279111798, min 21721.30518977537, max 23082.77226955848, standardDeviation: 405.1381998427823, Metric (allocationCount) results: median 43.0, min 43.0, max 43.0007745933385, standardDeviation: 3.651468015422337E-4]count=3873
-05-10 03:12:11.119 23197 23221 D Benchmark: writing results to /storage/emulated/0/Android/data/org.jetbrains.android_benchmark.test/cache/org.jetbrains.android_benchmark.test-benchmarkData.json
-05-10 03:12:11.140 23197 23221 D Benchmark: Copying /storage/emulated/0/Android/data/org.jetbrains.android_benchmark.test/cache/org.jetbrains.android_benchmark.test-benchmarkData.json to /sdcard/Android/media/org.jetbrains.android_benchmark.test/additional_test_output/org.jetbrains.android_benchmark.test-benchmarkData.json
-05-10 03:12:11.172  8330 25331 I MediaProvider: Deleted 1 0 0 0 0 0 0 items on external_primary due to org.jetbrains.android_benchmark.test
-05-10 03:12:11.177  5679  5748 W libprocessgroup: Failed to open /dev/blkio//cgroup.procs: No such file or directory
-05-10 03:12:11.178  5679  8453 D SyncManager: userId - 0 auto - true
-05-10 03:12:11.182  8330 24906 W MediaProvider: isAppCloneUserPair for user 0: false
-05-10 03:12:11.192 30196 24381 I NetworkScheduler.Stats: Task com.google.android.gms/com.google.android.gms.ipa.base.IpaGcmTaskService started execution. cause:9 exec_start_elapsed_seconds: 249316 [CONTEXT service_id=218 ]
-05-10 03:12:11.200 23197 23221 I TestRunner: finished: mutableSpecificRefInt(org.jetbrains.android_benchmark.AckermannBenchmark)
+07-10 00:49:03.598 11611 11645 I TestRunner: started: mutableSpecificRefInt(org.jetbrains.android_benchmark.AckermannBenchmark)
+07-10 00:49:03.601 11611 11611 I MonitoringInstr: Activities that are still in CREATED to STOPPED: 1
+07-10 00:49:03.602 11611 11611 I MonitoringInstr: Finishing activity: androidx.benchmark.IsolationActivity@c9a4959
+07-10 00:49:03.611 11611 11645 I GrantPermissionCallable: Permission: android.permission.WRITE_EXTERNAL_STORAGE is already granted!
+07-10 00:49:03.612 11611 11645 I GrantPermissionCallable: Permission: android.permission.READ_EXTERNAL_STORAGE is already granted!
+07-10 00:49:03.612 11611 11645 D Benchmark: -- Running org.jetbrains.android_benchmark.AckermannBenchmark#mutableSpecificRefInt --
+07-10 00:49:03.613 11611 11645 D PerfettoCapture: Supported ABIs: arm64-v8a, armeabi-v7a, armeabi
+07-10 00:49:03.613 11611 11645 D PerfettoCapture: Recording perfetto trace
+07-10 00:49:03.656 11611 11645 I PerfettoCapture: Cleanup perfetto before starting.
+07-10 00:49:03.750  5353  5543 V APM_AudioPolicyManager: setAppState(portId:1005, state:1)
+07-10 00:49:03.751  5674  5745 W libprocessgroup: Failed to open /dev/blkio//cgroup.procs: No such file or directory
+07-10 00:49:03.772 10639 10639 I SCS@AiSearch user 0: (ObserverWorker::AOSP_MP) [main] entering in startWork():
+07-10 00:49:03.773 10639 10639 I SCS@AiSearch user 0: (BaseCollector::AOSP_MP) [main] entering in onChange():
+07-10 00:49:03.774 10639 10825 I SCS@AiSearch user 0: (BaseCollector::AOSP_MP) [AOSP_MP-0] entering in collectChanges():
+07-10 00:49:03.782  5674  9951 D PackageManager: setEnabledSetting : userId = 0 packageName = com.samsung.android.scs cmp = androidx.work.impl.background.systemalarm.RescheduleReceiver newState = 1 callingPackage = 10380/com.samsung.android.scs
+07-10 00:49:03.784  5674  9951 D ApplicationPolicy: getApplicationStateEnabled : pkg = com.samsung.android.scs userId : 0
+07-10 00:49:03.786  5674  9951 D ApplicationPolicy: getApplicationComponentState : pkg = com.samsung.android.scs userId : 0
+07-10 00:49:03.846 11611 11645 I PerfettoCapture: Perfetto output file cleanup -
+07-10 00:49:03.846 11611 11645 I PerfettoCapture: Starting perfetto tracing with cmd: cat /storage/emulated/0/Android/data/org.jetbrains.android_benchmark.test/cache/trace_config.pb | perfetto --background -c - -o /data/misc/perfetto-traces/trace_output.pb
+07-10 00:49:03.968 10639 10825 I SCS@AiSearch user 0: (BaseCollector::AOSP_MP) fetchInternal values : maxSyncId: 1000028446 indexCount: 19466 sourceCount: 19466
+07-10 00:49:04.022 17153 17153 I perfetto:    perfetto_cmd.cc:1001 Connected to the Perfetto traced service, starting tracing
+07-10 00:49:04.024  5436  5436 I perfetto: ing_service_impl.cc:953 Configured tracing session 303, #sources:4, duration:0 ms, #buffers:2, total buffer size:36864 KB, total sessions:1, uid:2000 session name: ""
+07-10 00:49:04.026  5424  5424 I perfetto:  probes_producer.cc:139 Ftrace setup (target_buf=605)
+07-10 00:49:04.056  5674  6055 D ConnectivityService: notifyType CALLBACK_CAP_CHANGED for [118 WIFI]
+07-10 00:49:04.058  5674  7726 D SemWifiUsabilityStatsMonitor: onWifiUsabilityStats - seqNum 21209, isSameBssidAndFreq true
+07-10 00:49:04.061  6461  6461 D NetworkController.WifiSignalController: notifyListener: visible=true, connected=true, inetCondition=1, isDefault=true, wifiTestReported=true, receivedInetCondition=-1, hideDuringMobileSwitching=false
+07-10 00:49:04.061  5674  6128 I SemWifiLinkQualityMonitor: Link Qos Query: 0.068 ms / 117.000 Mbps (351 / 0.000 / 3.000)
+07-10 00:49:04.062  5674  6086 D SemWifiSwitchForIndividualAppsService: stopTCPMonitoring : already stopped
+07-10 00:49:04.063  5674  6086 I WifiConnectivityMonitor.NCC: sNetworkCallback(oCC) FULL : 118(true/false)[ Transports: WIFI Capabilities: NOT_METERED&INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VPN&VALIDATED&NOT_ROAMING&FOREGROUND&NOT_CONGESTED&NOT_SUSPENDED&NOT_VCN_MANAGED LinkUpBandwidth>=15762Kbps LinkDnBandwidth>=38308Kbps TransportInfo: <SSID: <unknown ssid>, BSSID: 02:00:00:**:**:00, MAC: 02:00:00:**:**:00, IP: /192.168.1.19, Security type: 2, Supplicant state: COMPLETED, Wi-Fi standard: 5, RSSI: -65, Link speed: 351Mbps, Tx Link speed: 351Mbps, Max Supported Tx Link speed: 433Mbps, Rx Link speed: 6Mbps, Max Supported Rx Link speed: 433Mbps, Frequency: 5180MHz, Net ID: -1, Metered hint: false, score: 60, isUsable: true, CarrierMerged: false, SubscriptionId: -1, IsPrimary: 1, Trusted: true, Restricted: false, Ephemeral: false, OEM paid: false, OEM private: false, OSU AP: false, FQDN: <none>, Provider friendly name: <none>, Requesting package name: <none><none>MLO Information: , AP MLD Address: <none>, AP MLO Link Id: <none>, AP MLO Affiliated links: <none>> SignalStrength: -65 AdminUids: [1000] SSID: "Talija" UnderlyingNetworks: Null]
+07-10 00:49:04.064  5674  6164 I WifiConnectivityMonitor: current mode : 1
+07-10 00:49:04.064  5674  6164 D OpenNetworkQos[4.00]: updateBssidNoInternet: mBssidNoInternet = false
+07-10 00:49:04.064  5674  6164 D OpenNetworkQos[4.00]: getOpenNetworkQosNoInternetStatus: false
+07-10 00:49:04.064  5674  6164 D OpenNetworkQos[4.00]: getOpenNetworkQosScores: 26 26 26
+07-10 00:49:04.064  5674  6164 I WifiProfileShare: network QoS data was changed (internet), updateQoSData networkType: true, qosData: false
+07-10 00:49:04.065  5674  7451 V WifiProfileShare.Caster: update wips network, size: 0
+07-10 00:49:04.065  5674  7451 D WifiProfileShare: nearby scanning settings run
+07-10 00:49:04.065  5674  7451 D WifiProfileShare: network score provider settings enabled
+07-10 00:49:04.066  5674  7451 D OpenNetworkQos[4.00]: getOpenNetworkQosScores: 26 26 26
+07-10 00:49:04.066  5674  7451 D OpenNetworkQos[4.00]: getOpenNetworkQosNoInternetStatus: false
+07-10 00:49:04.066  5674  7451 I WifiProfileShare.Caster: current network type: 0, score: [26, 26, 26]
+07-10 00:49:04.067  5674  7451 V WifiProfileShare.Cache: update network score 00:e4:06:**:**:90
+07-10 00:49:04.067  5674  7451 D WifiProfileShare.ScanMatcher: getMcfDataList size:2
+07-10 00:49:04.068  5674  7451 I WifiProfileShare.Caster: qos data was updated , before:type:QOS, pBssid:51:2e:90, qosData:7c after:type:QOS, pBssid:51:2e:90, qosData:7c
+07-10 00:49:04.068 11611 11645 I PerfettoCapture: Perfetto output - 17153
+07-10 00:49:04.068 11611 11645 I PerfettoCapture: EXITCODE=0
+07-10 00:49:04.070  5674  7451 I [MCFSDK_android_1.2.4010]_4_b: isNetworkEnabled - type : 1 ret : true
+07-10 00:49:04.071  5674  7451 D WifiProfileShare.McfCast: -ME--- mIsNetworkEnabled :true
+07-10 00:49:04.071  5674  7451 D WifiProfileShare.McfCast: updateQoSData ignored, same contents
+07-10 00:49:04.071  5674  7451 D WifiProfileShare.MCF: success update QosData !
+07-10 00:49:04.072  5674  7451 I [MCFSDK_android_1.2.4010]_4_b: isNetworkEnabled - type : 1 ret : true
+07-10 00:49:04.073  5674  7451 D WifiProfileShare.McfCast: -ME--- mIsNetworkEnabled :true
+07-10 00:49:04.073  5674  7451 D WifiProfileShare.McfCast: -ME--- updatePasswordDate pwdData size:2
+07-10 00:49:04.076 16924 19143 I ChimeraSrvcProxy: NullBinder for android.net.action.RECOMMEND_NETWORKS triggering remote TransactionTooLargeException due to Service without Chimera impl
+07-10 00:49:04.076 16924 19143 W .gms.persistent: Large reply transaction of 1056768 bytes, interface descriptor , code 1
+07-10 00:49:04.078  6461  6566 D NetworkController.WifiSignalController: notifyListener: visible=true, connected=true, inetCondition=1, isDefault=true, wifiTestReported=true, receivedInetCondition=-1, hideDuringMobileSwitching=false
+07-10 00:49:04.092  4380  4380 I hwservicemanager: getTransport: Cannot find entry android.hardware.atrace@1.0::IAtraceDevice/default in either framework or device VINTF manifest.
+07-10 00:49:04.108  5424  5424 I perfetto:    ftrace_procfs.cc:335 enabled ftrace in /sys/kernel/tracing/
+07-10 00:49:04.120 10639 10825 I SCS@AiSearch user 0: (IndexManager) [AOSP_MP-0] entering in addIndex():
+07-10 00:49:04.149 10639 10825 I SCS@AiSearch user 0: (BaseCollector::AOSP_MP) fetch: fetching took  268 ms
+07-10 00:49:04.149 10639 10825 I SCS@AiSearch user 0: (BaseCollector::AOSP_MP) fetchChanges: applied 0 items
+07-10 00:49:04.150 10639 10825 I SCS@AiSearch user 0: (BaseCollector::AOSP_MP) Collect finished. Result: true
+07-10 00:49:04.153 10639 10702 I WM-WorkerWrapper: Worker result SUCCESS for Work [ id=41f88d3e-80a3-4b95-9272-cf3d22b5bd66, tags={ com.sec.android.app.myfiles, com.samsung.android.scs.ai.search.data.collector.ObserverWorker } ]
+07-10 00:49:04.154 11611 11645 I PerfettoCapture: Perfetto tracing started successfully with pid 17153.
+07-10 00:49:04.160 10639 10825 I SCS@AiSearch user 0: (BaseCollector::AOSP_MP) enqueue ObserverWorker name: com.sec.android.app.myfiles, policy: APPEND_OR_REPLACE
+07-10 00:49:04.169  5353  5543 V APM_AudioPolicyManager: setAppState(portId:1005, state:1)
+07-10 00:49:04.198  5353  5543 V APM_AudioPolicyManager: setAppState(portId:1005, state:1)
+07-10 00:49:04.239 11611 11645 I PerfettoCapture: /sys/kernel/tracing/tracing_on = 1, polled 0 times, capture fully started
+07-10 00:49:04.241 11611 11645 D Benchmark: Set 11645 (Bench thread) to priority -20. Was -8, now -20
+07-10 00:49:04.241 11611 11645 D Benchmark: Set 11624 (Jit) to priority -15. Was 9, now -15
+07-10 00:49:04.277 11611 11645 I _benchmark.test: Explicit concurrent copying GC freed 283321(4962KB) AllocSpace objects, 1(20KB) LOS objects, 67% free, 2972KB/9116KB, paused 333us,158us total 35.270ms
+07-10 00:49:04.301  5674  9951 D PackageManager: setEnabledSetting : userId = 0 packageName = com.samsung.android.scs cmp = androidx.work.impl.background.systemalarm.RescheduleReceiver newState = 1 callingPackage = 10380/com.samsung.android.scs
+07-10 00:49:04.306  5674  9951 D ApplicationPolicy: getApplicationStateEnabled : pkg = com.samsung.android.scs userId : 0
+07-10 00:49:04.307  5674  9951 D ApplicationPolicy: getApplicationComponentState : pkg = com.samsung.android.scs userId : 0
+07-10 00:49:04.649  5674  9951 D PackageManager: setEnabledSetting : userId = 0 packageName = com.Slack cmp = androidx.work.impl.background.systemalarm.RescheduleReceiver newState = 1 callingPackage = 10329/com.Slack
+07-10 00:49:04.650  5674  9951 D ApplicationPolicy: getApplicationStateEnabled : pkg = com.Slack userId : 0
+07-10 00:49:04.651  5674  9951 D ApplicationPolicy: getApplicationComponentState : pkg = com.Slack userId : 0
+07-10 00:49:04.669  5353  5543 V APM_AudioPolicyManager: setAppState(portId:1005, state:1)
+07-10 00:49:04.673  5674  5745 W libprocessgroup: Failed to open /dev/blkio//cgroup.procs: No such file or directory
+07-10 00:49:04.682 15049 15247 D ConnectivityManager: StackLog: [android.net.ConnectivityManager.sendRequestForNetwork(ConnectivityManager.java:4300)] [android.net.ConnectivityManager.registerDefaultNetworkCallbackForUid(ConnectivityManager.java:4864)] [android.net.ConnectivityManager.registerDefaultNetworkCallback(ConnectivityManager.java:4831)] [android.net.ConnectivityManager.registerDefaultNetworkCallback(ConnectivityManager.java:4805)] [androidx.work.impl.utils.NetworkApi24.registerDefaultNetworkCallbackCompat(Unknown Source:11)] [androidx.work.impl.constraints.trackers.NetworkStateTracker24.startTracking(Unknown Source:15)] [androidx.work.impl.constraints.controllers.ConstraintController.replace(Unknown Source:130)] [androidx.work.impl.constraints.WorkConstraintsTrackerImpl.replace(Unknown Source:41)] [androidx.work.impl.background.greedy.GreedyScheduler.schedule(Unknown Source:302)] [androidx.work.impl.Schedulers.schedule(Unknown Source:155)] [androidx.work.impl.utils.EnqueueRunnable.run(Unknown Source:53)] [androidx.work.Worker$2.run$androidx$work$impl$utils$SerialExecutorImpl$Task(Unknown Source:4)] [androidx.work.Worker$2.run(Unknown Source:868)] [java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1137)] [java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:637)] [java.lang.Thread.run(Thread.java:1012)]
+07-10 00:49:04.685  5674  9951 D ConnectivityService: requestNetwork for uid/pid:10329/15049 activeRequest: null callbackRequest: 16472 [NetworkRequest [ REQUEST id=16473, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VCN_MANAGED Uid: 10329 RequestorUid: 10329 RequestorPkg: com.Slack UnderlyingNetworks: Null] ]] callback flags: 0 order: 2147483647
+07-10 00:49:04.687  5674  6055 D ConnectivityService:    accepting network in place of null
+07-10 00:49:04.694  5674  6045 D WifiNetworkFactory: got request NetworkRequest [ REQUEST id=16473, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VCN_MANAGED Uid: 10329 RequestorUid: 10329 RequestorPkg: com.Slack UnderlyingNetworks: Null] ]
+07-10 00:49:04.695  5674  6045 D UntrustedWifiNetworkFactory: got request NetworkRequest [ REQUEST id=16473, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VCN_MANAGED Uid: 10329 RequestorUid: 10329 RequestorPkg: com.Slack UnderlyingNetworks: Null] ]
+07-10 00:49:04.697  5674  6045 D OemPaidWifiNetworkFactory: got request NetworkRequest [ REQUEST id=16473, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VCN_MANAGED Uid: 10329 RequestorUid: 10329 RequestorPkg: com.Slack UnderlyingNetworks: Null] ]
+07-10 00:49:04.697  5674  6045 D MultiInternetWifiNetworkFactory: got request NetworkRequest [ REQUEST id=16473, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VCN_MANAGED Uid: 10329 RequestorUid: 10329 RequestorPkg: com.Slack UnderlyingNetworks: Null] ]
+07-10 00:49:04.702  5674  6055 D ConnectivityService: Rematched networks [computed 0ms] [applied 4ms] [issued 11]
+07-10 00:49:04.702  5674  6055 D ConnectivityService: NetworkReassignment :
+07-10 00:49:04.702  5674  6055 D ConnectivityService:   16473 : null → 118
+07-10 00:49:04.706 15049 15049 D ConnectivityManager: StackLog: [android.net.ConnectivityManager.unregisterNetworkCallback(ConnectivityManager.java:4972)] [androidx.work.impl.utils.NetworkApi21.unregisterNetworkCallbackCompat(Unknown Source:11)] [androidx.work.impl.constraints.trackers.NetworkStateTracker24.stopTracking(Unknown Source:15)] [androidx.work.impl.constraints.trackers.ConstraintTracker.removeListener(Unknown Source:24)] [androidx.work.impl.constraints.controllers.ConstraintController.replace(Unknown Source:81)] [androidx.work.impl.constraints.WorkConstraintsTrackerImpl.replace(Unknown Source:41)] [androidx.work.impl.background.greedy.GreedyScheduler.onExecuted(Unknown Source:55)] [androidx.work.impl.Processor.onExecuted(Unknown Source:59)] [com.bugsnag.android.DeliveryDelegate$1.run(Unknown Source:212)]
+07-10 00:49:04.708  5674  6055 D ConnectivityService:  Removing from current network [118 WIFI], leaving 152 requests.
+07-10 00:49:04.715  5353  5543 V APM_AudioPolicyManager: setAppState(portId:1005, state:1)
+07-10 00:49:04.718  5353  5543 V APM_AudioPolicyManager: setAppState(portId:1005, state:1)
+07-10 00:49:04.851  5262  5262 E audit   : type=1400 audit(1688942944.849:69499): avc:  denied  { getattr } for  pid=5674 comm="BinderProcsColl" path="/sys/kernel/debug/binder/proc/5674" dev="debugfs" ino=32119 scontext=u:r:system_server:s0 tcontext=u:object_r:sec_debugfs:s0 tclass=file permissive=0 SEPF_SM-A515F_13_0001 audit_filtered
+07-10 00:49:04.851  5262  5262 E audit   : type=1300 audit(1688942944.849:69499): arch=c00000b7 syscall=79 success=no exit=-13 a0=ffffff9c a1=7b06e86f40 a2=79df9bd680 a3=0 items=0 ppid=5287 pid=5674 auid=4294967295 uid=1000 gid=1000 euid=1000 suid=1000 fsuid=1000 egid=1000 sgid=1000 fsgid=1000 tty=(none) ses=4294967295 comm="BinderProcsColl" exe="/system/bin/app_process64" subj=u:r:system_server:s0 key=(null)
+07-10 00:49:04.852  5262  5262 E audit   : type=1327 audit(1688942944.849:69499): proctitle="system_server"
+07-10 00:49:07.100  5674  7726 D SemWifiUsabilityStatsMonitor: onWifiUsabilityStats - seqNum 21210, isSameBssidAndFreq true
+07-10 00:49:07.104  5674  6128 I SemWifiLinkQualityMonitor: Link Qos Query: 0.023 ms / 351.000 Mbps (351 / 0.000 / 1.000)
+07-10 00:49:07.105  6461  6461 D NetworkController.WifiSignalController: notifyListener: visible=true, connected=true, inetCondition=1, isDefault=true, wifiTestReported=true, receivedInetCondition=-1, hideDuringMobileSwitching=false
+07-10 00:49:09.115 11611 11645 D Benchmark: timeNs[ 0:10]: 23508 24291 23236 23821 22849 23590 22972 23496 24834 23204
+07-10 00:49:09.115 11611 11645 D Benchmark: timeNs[10:20]: 23552 22962 23416 23237 22845 23477 22919 23180 23615 22975
+07-10 00:49:09.115 11611 11645 D Benchmark: timeNs[20:30]: 23704 22859 22670 24076 23003 23765 22856 22985 23837 23002
+07-10 00:49:09.115 11611 11645 D Benchmark: timeNs[30:40]: 23298 23387 23228 23994 22913 22937 23671 22942 23784 22753
+07-10 00:49:09.116 11611 11645 D Benchmark: timeNs[40:50]: 22890 23654 23033 23594 23177 22846 23522 22846 23162 23197
+07-10 00:49:09.511 11611 11645 W _benchmark.test: Suspending all threads took: 7.536ms
+07-10 00:49:09.534 11611 11645 W _benchmark.test: Suspending all threads took: 22.316ms
+07-10 00:49:09.644 11611 11645 D Benchmark: allocationCount[ 0:10]: 43 43 43 43 43
+07-10 00:49:09.645 11611 11645 D Benchmark: Set 11645 (Bench thread) to priority -8. Was -20, now -8
+07-10 00:49:09.645 11611 11645 D Benchmark: Set 11624 (Jit) to priority 9. Was -15, now 9
+07-10 00:49:09.645 11611 11645 D Benchmark: Warmup: t=0.258, iter=6499, fastAvg=25556, slowAvg=26282
+07-10 00:49:09.645 11611 11645 I PerfettoCapture: Stopping perfetto.
+07-10 00:49:09.693 17153 17153 I perfetto:    perfetto_cmd.cc:1168 SIGINT/SIGTERM received: disabling tracing.
+07-10 00:49:09.697 11611 11645 D Benchmark: kill -TERM command output -
+07-10 00:49:09.711  5424  5424 I perfetto:  probes_producer.cc:396 Producer stop (id=1209)
+07-10 00:49:09.713  5424  5424 I perfetto:    ftrace_procfs.cc:342 disabled ftrace in /sys/kernel/tracing/
+07-10 00:49:09.772  4380  4380 I hwservicemanager: getTransport: Cannot find entry android.hardware.atrace@1.0::IAtraceDevice/default in either framework or device VINTF manifest.
+07-10 00:49:09.779  5424  5424 I perfetto:  probes_producer.cc:396 Producer stop (id=1210)
+07-10 00:49:09.780  5424  5424 I perfetto:  probes_producer.cc:396 Producer stop (id=1211)
+07-10 00:49:09.798 17153 17153 I perfetto:    perfetto_cmd.cc:1124 Trace written into the output file
+07-10 00:49:09.801  5436  5436 I perfetto: ng_service_impl.cc:2426 Tracing session 303 ended, total sessions:0
+07-10 00:49:09.823 11611 11645 I PerfettoCapture: Writing to /storage/emulated/0/Android/data/org.jetbrains.android_benchmark.test/cache/AckermannBenchmark_mutableSpecificRefInt_2023-07-09-22-49-09.perfetto-trace.
+07-10 00:49:09.881 11611 11645 D Benchmark: Copying /storage/emulated/0/Android/data/org.jetbrains.android_benchmark.test/cache/AckermannBenchmark_mutableSpecificRefInt_2023-07-09-22-49-09.perfetto-trace to /sdcard/Android/media/org.jetbrains.android_benchmark.test/additional_test_output/AckermannBenchmark_mutableSpecificRefInt_2023-07-09-22-49-09.perfetto-trace
+07-10 00:49:09.907  9843 16972 W MediaProvider: isAppCloneUserPair for user 0: false
+07-10 00:49:09.923  5674  9851 D SyncManager: userId - 0 auto - true
+07-10 00:49:09.998 11611 11645 I Benchmark: AckermannBenchmark.mutableSpecificRefInt[Metric (timeNs) results: median 23216.454243353783, min 22670.196319018403, max 24834.041411042945, standardDeviation: 446.15018481278156, Metric (allocationCount) results: median 43.0, min 43.0, max 43.00051124744376, standardDeviation: 2.8002175741473427E-4]count=3912
+07-10 00:49:10.003 11611 11645 D Benchmark: writing results to /storage/emulated/0/Android/data/org.jetbrains.android_benchmark.test/cache/org.jetbrains.android_benchmark.test-benchmarkData.json
+07-10 00:49:10.013 11611 11645 D Benchmark: Copying /storage/emulated/0/Android/data/org.jetbrains.android_benchmark.test/cache/org.jetbrains.android_benchmark.test-benchmarkData.json to /sdcard/Android/media/org.jetbrains.android_benchmark.test/additional_test_output/org.jetbrains.android_benchmark.test-benchmarkData.json
+07-10 00:49:10.028  5674  5745 W libprocessgroup: Failed to open /dev/blkio//cgroup.procs: No such file or directory
+07-10 00:49:10.045 16924 14903 I NetworkScheduler.Stats: (REDACTED) Task %s/%s started execution. cause:%s exec_start_elapsed_seconds: %s
+07-10 00:49:10.060 16924 16461 I NetworkScheduler.Stats: (REDACTED) Task %s/%s finished executing. cause:%s result: %s elapsed_millis: %s uptime_millis: %s exec_start_elapsed_seconds: %s
+07-10 00:49:10.067  9843 17116 I MediaProvider: Deleted 0 0 0 0 0 0 0 items on external_primary due to org.jetbrains.android_benchmark.test
+07-10 00:49:10.078 16924 16952 D BluetoothSocket: close() this: android.bluetooth.BluetoothSocket@885bdd8, channel: -1, mSocketIS: android.net.LocalSocketImpl$SocketInputStream@dd9d531, mSocketOS: android.net.LocalSocketImpl$SocketOutputStream@99ae416, mSocket: null, mSocketState: CLOSED
+07-10 00:49:10.081 11611 11645 I TestRunner: finished: mutableSpecificRefInt(org.jetbrains.android_benchmark.AckermannBenchmark)

@@ -157,6 +157,27 @@ class AckermannBenchmark {
 
 
     @Test
+    fun valueOnlyBodiesInt() = benchmarkRule.measureRepeated {
+        value_only_bodies.ackermann.heavyActionInt(SimpleComplexNumberConsumer)
+    }
+
+    @Test
+    fun valueOnlyBodiesFloat() = benchmarkRule.measureRepeated {
+        value_only_bodies.ackermann.heavyActionFloat(SimpleComplexNumberConsumer)
+    }
+
+    @Test
+    fun valueOnlyBodiesLong() = benchmarkRule.measureRepeated {
+        value_only_bodies.ackermann.heavyActionLong(SimpleComplexNumberConsumer)
+    }
+
+    @Test
+    fun valueOnlyBodiesDouble() = benchmarkRule.measureRepeated {
+        value_only_bodies.ackermann.heavyActionDouble(SimpleComplexNumberConsumer)
+    }
+
+
+    @Test
     fun valuePreserveBoxInt() = benchmarkRule.measureRepeated {
         value_preserve_box.ackermann.heavyActionInt(SimpleComplexNumberConsumer)
     }

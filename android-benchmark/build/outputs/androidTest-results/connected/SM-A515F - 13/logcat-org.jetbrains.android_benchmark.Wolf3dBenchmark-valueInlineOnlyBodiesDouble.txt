@@ -1,0 +1,88 @@
+07-10 01:08:07.489 11611 11645 I TestRunner: started: valueInlineOnlyBodiesDouble(org.jetbrains.android_benchmark.Wolf3dBenchmark)
+07-10 01:08:07.493 11611 11611 I MonitoringInstr: Activities that are still in CREATED to STOPPED: 1
+07-10 01:08:07.493 11611 11611 I MonitoringInstr: Finishing activity: androidx.benchmark.IsolationActivity@c9a4959
+07-10 01:08:07.502 11611 11645 I GrantPermissionCallable: Permission: android.permission.WRITE_EXTERNAL_STORAGE is already granted!
+07-10 01:08:07.503 11611 11645 I GrantPermissionCallable: Permission: android.permission.READ_EXTERNAL_STORAGE is already granted!
+07-10 01:08:07.503 11611 11645 D Benchmark: -- Running org.jetbrains.android_benchmark.Wolf3dBenchmark#valueInlineOnlyBodiesDouble --
+07-10 01:08:07.505 11611 11645 D PerfettoCapture: Supported ABIs: arm64-v8a, armeabi-v7a, armeabi
+07-10 01:08:07.505 11611 11645 D PerfettoCapture: Recording perfetto trace
+07-10 01:08:07.553 11611 11645 I PerfettoCapture: Cleanup perfetto before starting.
+07-10 01:08:07.778 11611 11645 I PerfettoCapture: Perfetto output file cleanup -
+07-10 01:08:07.778 11611 11645 I PerfettoCapture: Starting perfetto tracing with cmd: cat /storage/emulated/0/Android/data/org.jetbrains.android_benchmark.test/cache/trace_config.pb | perfetto --background -c - -o /data/misc/perfetto-traces/trace_output.pb
+07-10 01:08:07.927 22191 22191 I perfetto:    perfetto_cmd.cc:1001 Connected to the Perfetto traced service, starting tracing
+07-10 01:08:07.930  5436  5436 I perfetto: ing_service_impl.cc:953 Configured tracing session 322, #sources:4, duration:0 ms, #buffers:2, total buffer size:36864 KB, total sessions:1, uid:2000 session name: ""
+07-10 01:08:07.935  5424  5424 I perfetto:  probes_producer.cc:139 Ftrace setup (target_buf=643)
+07-10 01:08:07.962 11611 11645 I PerfettoCapture: Perfetto output - 22191
+07-10 01:08:07.962 11611 11645 I PerfettoCapture: EXITCODE=0
+07-10 01:08:07.998  4380  4380 I hwservicemanager: getTransport: Cannot find entry android.hardware.atrace@1.0::IAtraceDevice/default in either framework or device VINTF manifest.
+07-10 01:08:08.024  5424  5424 I perfetto:    ftrace_procfs.cc:335 enabled ftrace in /sys/kernel/tracing/
+07-10 01:08:08.064 11611 11645 I PerfettoCapture: Perfetto tracing started successfully with pid 22191.
+07-10 01:08:08.149 11611 11645 I PerfettoCapture: /sys/kernel/tracing/tracing_on = 1, polled 0 times, capture fully started
+07-10 01:08:08.151 11611 11645 D Benchmark: Set 11645 (Bench thread) to priority -20. Was -8, now -20
+07-10 01:08:08.151 11611 11645 D Benchmark: Set 11624 (Jit) to priority -15. Was 9, now -15
+07-10 01:08:08.185 11611 11645 I _benchmark.test: Explicit concurrent copying GC freed 14082(817KB) AllocSpace objects, 1(20KB) LOS objects, 67% free, 3013KB/9157KB, paused 335us,129us total 32.740ms
+07-10 01:08:08.779  5262  5262 E audit   : type=1400 audit(1688944088.777:69688): avc:  denied  { getattr } for  pid=5674 comm="BinderProcsColl" path="/sys/kernel/debug/binder/proc/5674" dev="debugfs" ino=32119 scontext=u:r:system_server:s0 tcontext=u:object_r:sec_debugfs:s0 tclass=file permissive=0 SEPF_SM-A515F_13_0001 audit_filtered
+07-10 01:08:08.779  5262  5262 E audit   : type=1300 audit(1688944088.777:69688): arch=c00000b7 syscall=79 success=no exit=-13 a0=ffffff9c a1=7ad23326d0 a2=79df9bd680 a3=0 items=0 ppid=5287 pid=5674 auid=4294967295 uid=1000 gid=1000 euid=1000 suid=1000 fsuid=1000 egid=1000 sgid=1000 fsgid=1000 tty=(none) ses=4294967295 comm="BinderProcsColl" exe="/system/bin/app_process64" subj=u:r:system_server:s0 key=(null)
+07-10 01:08:08.779  5262  5262 E audit   : type=1327 audit(1688944088.777:69688): proctitle="system_server"
+07-10 01:08:08.844  5674  7726 D SemWifiUsabilityStatsMonitor: onWifiUsabilityStats - seqNum 21585, isSameBssidAndFreq true
+07-10 01:08:08.845  5674  6128 I SemWifiLinkQualityMonitor: Link Qos Query: 0.049 ms / 162.000 Mbps (162 / 0.000 / 1.000)
+07-10 01:08:08.846  6461  6461 D NetworkController.WifiSignalController: notifyListener: visible=true, connected=true, inetCondition=1, isDefault=true, wifiTestReported=true, receivedInetCondition=-1, hideDuringMobileSwitching=false
+07-10 01:08:11.882  5674  7726 D SemWifiUsabilityStatsMonitor: onWifiUsabilityStats - seqNum 21586, isSameBssidAndFreq true
+07-10 01:08:11.885  5674  6128 I SemWifiLinkQualityMonitor: Link Qos Query: 0.183 ms / 43.750 Mbps (175 / 0.000 / 4.000)
+07-10 01:08:12.112  5353  5699 V APM_AudioPolicyManager: setAppState(portId:1005, state:1)
+07-10 01:08:12.115  5674  5745 W libprocessgroup: Failed to open /dev/blkio//cgroup.procs: No such file or directory
+07-10 01:08:12.131  5674  5745 W libprocessgroup: Failed to open /dev/blkio//cgroup.procs: No such file or directory
+07-10 01:08:12.132  5353  5699 V APM_AudioPolicyManager: setAppState(portId:1005, state:1)
+07-10 01:08:12.162  5353  5699 V APM_AudioPolicyManager: setAppState(portId:1005, state:1)
+07-10 01:08:12.164  5353  5699 V APM_AudioPolicyManager: setAppState(portId:1005, state:1)
+07-10 01:08:12.353  5353  5699 V APM_AudioPolicyManager: setAppState(portId:1005, state:1)
+07-10 01:08:12.364  5353  5699 V APM_AudioPolicyManager: setAppState(portId:1005, state:1)
+07-10 01:08:13.116 21284 22000 W libc    : Access denied finding property "sys.perf.boostopt"
+07-10 01:08:13.117  5262  5262 E audit   : type=1400 audit(1688944093.113:69689): avc:  denied  { read } for  pid=21284 comm="binder:21284_5" name="u:object_r:perf_prop:s0" dev="tmpfs" ino=10663 scontext=u:r:untrusted_app:s0:c252,c256,c512,c768 tcontext=u:object_r:perf_prop:s0 tclass=file permissive=0 SEPF_SM-A515F_13_0001 audit_filtered
+07-10 01:08:13.117  5262  5262 E audit   : type=1300 audit(1688944093.113:69689): arch=c00000b7 syscall=56 success=no exit=-13 a0=ffffff9c a1=7b89ef32f8 a2=88000 a3=0 items=0 ppid=5287 pid=21284 auid=4294967295 uid=10252 gid=10252 euid=10252 suid=10252 fsuid=10252 egid=10252 sgid=10252 fsgid=10252 tty=(none) ses=4294967295 comm="binder:21284_5" exe="/system/bin/app_process64" subj=u:r:untrusted_app:s0:c252,c256,c512,c768 key=(null)
+07-10 01:08:13.117  5262  5262 E audit   : type=1327 audit(1688944093.113:69689): proctitle="com.google.android.apps.photos"
+07-10 01:08:13.121  5262  5262 E audit   : type=1400 audit(1688944093.117:69690): avc:  denied  { read } for  pid=21284 comm="binder:21284_6" name="u:object_r:perf_prop:s0" dev="tmpfs" ino=10663 scontext=u:r:untrusted_app:s0:c252,c256,c512,c768 tcontext=u:object_r:perf_prop:s0 tclass=file permissive=0 SEPF_SM-A515F_13_0001 audit_filtered
+07-10 01:08:13.121 21284 22213 W libc    : Access denied finding property "sys.perf.boostopt"
+07-10 01:08:13.122  5262  5262 E audit   : type=1300 audit(1688944093.117:69690): arch=c00000b7 syscall=56 success=no exit=-13 a0=ffffff9c a1=7b89df52f8 a2=88000 a3=0 items=0 ppid=5287 pid=21284 auid=4294967295 uid=10252 gid=10252 euid=10252 suid=10252 fsuid=10252 egid=10252 sgid=10252 fsgid=10252 tty=(none) ses=4294967295 comm="binder:21284_6" exe="/system/bin/app_process64" subj=u:r:untrusted_app:s0:c252,c256,c512,c768 key=(null)
+07-10 01:08:13.122  5262  5262 E audit   : type=1327 audit(1688944093.117:69690): proctitle="com.google.android.apps.photos"
+07-10 01:08:13.123 21179 21204 W libc    : Access denied finding property "sys.perf.boostopt"
+07-10 01:08:14.907  5674  7726 D SemWifiUsabilityStatsMonitor: onWifiUsabilityStats - seqNum 21587, isSameBssidAndFreq true
+07-10 01:08:14.909  5674  6128 I SemWifiLinkQualityMonitor: Link Qos Query: 0.183 ms / 43.750 Mbps (175 / 0.000 / 4.000)
+07-10 01:08:14.910  6461  6461 D NetworkController.WifiSignalController: notifyListener: visible=true, connected=true, inetCondition=1, isDefault=true, wifiTestReported=true, receivedInetCondition=-1, hideDuringMobileSwitching=false
+07-10 01:08:17.955  5674  7726 D SemWifiUsabilityStatsMonitor: onWifiUsabilityStats - seqNum 21588, isSameBssidAndFreq true
+07-10 01:08:17.956  5674  6128 I SemWifiLinkQualityMonitor: Link Qos Query: 0.183 ms / 43.750 Mbps (175 / 0.000 / 4.000)
+07-10 01:08:18.651  6461  6566 D MobileStatusTracker(1/2): onSignalStrengthsChanged level=3, vendorLevel=3
+07-10 01:08:18.655  6461  6566 D MobileSignalController(1/2): notifyListener: enabled=true, connected=true, dataConnected=false, networkType=LTE (4G), emergencyOnly=false, roaming=false, isDefault=false, dataActivity=, level=3, ca=false, mmWave=false, disabledDataIcon=false, simCard=ETC
+07-10 01:08:18.659  6461  6566 D NetworkController: SignalStrength from intent slotId=1
+07-10 01:08:20.862 11611 11645 D Benchmark: timeNs[ 0:10]: 18635769 18639292 18633776 18625092 18630700 18647946 18633815 18634884 18608507 18620415
+07-10 01:08:20.862 11611 11645 D Benchmark: timeNs[10:20]: 18624707 18602623 18619115 18655515 18619730 18607730 18634554 18636223 18599238 18645061
+07-10 01:08:20.862 11611 11645 D Benchmark: timeNs[20:30]: 18625723 18613746 18613846 18627015 18619761 18646123 18633623 18637253 18630707 18643284
+07-10 01:08:20.862 11611 11645 D Benchmark: timeNs[30:40]: 18624315 18608038 18624499 18628269 18602646 18624915 18619077 18638684 18637007 18647276
+07-10 01:08:20.862 11611 11645 D Benchmark: timeNs[40:50]: 18642961 18609300 18616123 18634623 18628015 18616146 18602338 18614277 18600600 18629615
+07-10 01:08:20.993  5674  7726 D SemWifiUsabilityStatsMonitor: onWifiUsabilityStats - seqNum 21589, isSameBssidAndFreq true
+07-10 01:08:20.996  5674  6128 I SemWifiLinkQualityMonitor: Link Qos Query: 0.183 ms / 43.750 Mbps (175 / 0.000 / 4.000)
+07-10 01:08:21.330 11611 11645 D Benchmark: allocationCount[ 0:10]: 0 0 0 0 0
+07-10 01:08:21.330 11611 11645 D Benchmark: Set 11645 (Bench thread) to priority -8. Was -20, now -8
+07-10 01:08:21.330 11611 11645 D Benchmark: Set 11624 (Jit) to priority 9. Was -15, now 9
+07-10 01:08:21.330 11611 11645 D Benchmark: Warmup: t=8.016, iter=424, fastAvg=18635376, slowAvg=31306688
+07-10 01:08:21.330 11611 11645 I PerfettoCapture: Stopping perfetto.
+07-10 01:08:21.371 22191 22191 I perfetto:    perfetto_cmd.cc:1168 SIGINT/SIGTERM received: disabling tracing.
+07-10 01:08:21.373 11611 11645 D Benchmark: kill -TERM command output -
+07-10 01:08:21.383  5424  5424 I perfetto:  probes_producer.cc:396 Producer stop (id=1285)
+07-10 01:08:21.385  5424  5424 I perfetto:    ftrace_procfs.cc:342 disabled ftrace in /sys/kernel/tracing/
+07-10 01:08:21.441  4380  4380 I hwservicemanager: getTransport: Cannot find entry android.hardware.atrace@1.0::IAtraceDevice/default in either framework or device VINTF manifest.
+07-10 01:08:21.449  5424  5424 I perfetto:  probes_producer.cc:396 Producer stop (id=1286)
+07-10 01:08:21.450  5424  5424 I perfetto:  probes_producer.cc:396 Producer stop (id=1287)
+07-10 01:08:21.471 22191 22191 I perfetto:    perfetto_cmd.cc:1124 Trace written into the output file
+07-10 01:08:21.476  5436  5436 I perfetto: ng_service_impl.cc:2426 Tracing session 322 ended, total sessions:0
+07-10 01:08:21.499 11611 11645 I PerfettoCapture: Writing to /storage/emulated/0/Android/data/org.jetbrains.android_benchmark.test/cache/Wolf3dBenchmark_valueInlineOnlyBodiesDouble_2023-07-09-23-08-21.perfetto-trace.
+07-10 01:08:21.621 11611 11645 D Benchmark: Copying /storage/emulated/0/Android/data/org.jetbrains.android_benchmark.test/cache/Wolf3dBenchmark_valueInlineOnlyBodiesDouble_2023-07-09-23-08-21.perfetto-trace to /sdcard/Android/media/org.jetbrains.android_benchmark.test/additional_test_output/Wolf3dBenchmark_valueInlineOnlyBodiesDouble_2023-07-09-23-08-21.perfetto-trace
+07-10 01:08:21.678  9843 22157 W MediaProvider: isAppCloneUserPair for user 0: false
+07-10 01:08:21.696  5674  5819 D SyncManager: userId - 0 auto - true
+07-10 01:08:21.824 11611 11645 I Benchmark: Wolf3dBenchmark.valueInlineOnlyBodiesDouble[Metric (timeNs) results: median 1.86263692E7, min 1.85992384E7, max 1.86555154E7, standardDeviation: 13936.116854652584, Metric (allocationCount) results: median 0.0, min 0.0, max 0.0, standardDeviation: 0.0]count=5
+07-10 01:08:21.828 11611 11645 D Benchmark: writing results to /storage/emulated/0/Android/data/org.jetbrains.android_benchmark.test/cache/org.jetbrains.android_benchmark.test-benchmarkData.json
+07-10 01:08:21.887 11611 11645 D Benchmark: Copying /storage/emulated/0/Android/data/org.jetbrains.android_benchmark.test/cache/org.jetbrains.android_benchmark.test-benchmarkData.json to /sdcard/Android/media/org.jetbrains.android_benchmark.test/additional_test_output/org.jetbrains.android_benchmark.test-benchmarkData.json
+07-10 01:08:21.938  9843 22142 I MediaProvider: Deleted 0 0 0 0 0 0 0 items on external_primary due to org.jetbrains.android_benchmark.test
+07-10 01:08:21.942  5674  5745 W libprocessgroup: Failed to open /dev/blkio//cgroup.procs: No such file or directory
+07-10 01:08:21.960 16924 21821 I NetworkScheduler.Stats: (REDACTED) Task %s/%s started execution. cause:%s exec_start_elapsed_seconds: %s
+07-10 01:08:21.960 11611 11645 I TestRunner: finished: valueInlineOnlyBodiesDouble(org.jetbrains.android_benchmark.Wolf3dBenchmark)

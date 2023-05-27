@@ -68,11 +68,25 @@ open class Wolf3dBenchmark {
 
     
     @Benchmark
+    fun valueOnlyBodiesFloat(bh: Blackhole) = value_only_bodies.rendering.heavyActionFloat(makeGraphics(bh))
+
+    @Benchmark
+    fun valueOnlyBodiesDouble(bh: Blackhole) = value_only_bodies.rendering.heavyActionDouble(makeGraphics(bh))
+
+    
+    @Benchmark
     fun valueInlineFloat(bh: Blackhole) = value_inline.rendering.heavyActionFloat(makeGraphics(bh))
 
     @Benchmark
     fun valueInlineDouble(bh: Blackhole) = value_inline.rendering.heavyActionDouble(makeGraphics(bh))
 
+
+    @Benchmark
+    fun valueInlineOnlyBodiesFloat(bh: Blackhole) = value_inline_only_bodies.rendering.heavyActionFloat(makeGraphics(bh))
+
+    @Benchmark
+    fun valueInlineOnlyBodiesDouble(bh: Blackhole) = value_inline_only_bodies.rendering.heavyActionDouble(makeGraphics(bh))
+    
     
     @Benchmark
     fun valuePreserveBoxFloat(bh: Blackhole) = value_preserve_box.rendering.heavyActionFloat(makeGraphics(bh))

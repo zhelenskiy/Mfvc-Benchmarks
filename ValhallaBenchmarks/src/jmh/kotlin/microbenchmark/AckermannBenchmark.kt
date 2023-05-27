@@ -100,6 +100,19 @@ open class AckermannBenchmark {
 
     
     @Benchmark
+    fun valueOnlyBodiesInt(bh: Blackhole) = value_only_bodies.ackermann.heavyActionInt(JmhComplexNumberConsumer(bh))
+
+    @Benchmark
+    fun valueOnlyBodiesFloat(bh: Blackhole) = value_only_bodies.ackermann.heavyActionFloat(JmhComplexNumberConsumer(bh))
+
+    @Benchmark
+    fun valueOnlyBodiesLong(bh: Blackhole) = value_only_bodies.ackermann.heavyActionLong(JmhComplexNumberConsumer(bh))
+
+    @Benchmark
+    fun valueOnlyBodiesDouble(bh: Blackhole) = value_only_bodies.ackermann.heavyActionDouble(JmhComplexNumberConsumer(bh))
+
+    
+    @Benchmark
     fun valuePreserveBoxInt(bh: Blackhole) = value_preserve_box.ackermann.heavyActionInt(JmhComplexNumberConsumer(bh))
 
     @Benchmark
