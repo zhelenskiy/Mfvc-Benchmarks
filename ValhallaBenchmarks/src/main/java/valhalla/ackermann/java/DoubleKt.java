@@ -1,12 +1,12 @@
-package valhalla.ackermann;
+package valhalla.ackermann.java;
 
 import shared.ComplexNumberConsumer;
 import shared.ComplexNumberPrinter;
 
-import static valhalla.ackermann.ComplexDouble.complex;
-import static valhalla.ackermann.ComplexDouble.plus;
-import static valhalla.ackermann.ComplexDouble.times;
-import static valhalla.ackermann.ComplexDouble.i;
+import static valhalla.ackermann.java.ComplexDouble.complex;
+import static valhalla.ackermann.java.ComplexDouble.plus;
+import static valhalla.ackermann.java.ComplexDouble.times;
+import static valhalla.ackermann.java.ComplexDouble.i;
 value record ComplexDouble(double real, double imaginary) {
     @Override
     public String toString() {

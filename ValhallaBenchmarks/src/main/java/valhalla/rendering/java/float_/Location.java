@@ -1,4 +1,4 @@
-package valhalla.rendering.float_;
+package valhalla.rendering.java.float_;
 
 value record Location(int x, int y) {
 

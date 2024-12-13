@@ -1,4 +1,4 @@
-package valhalla.rendering.float_;
+package valhalla.rendering.java.float_;
 
 value record Vector2(float x, float y) {
 

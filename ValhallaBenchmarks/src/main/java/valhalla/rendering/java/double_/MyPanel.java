@@ -1,4 +1,4 @@
-package valhalla.rendering.double_;
+package valhalla.rendering.java.double_;
 
 import java.awt.Color;
 import java.awt.Graphics;

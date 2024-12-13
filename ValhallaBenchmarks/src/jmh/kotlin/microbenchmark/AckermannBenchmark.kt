@@ -113,14 +113,26 @@ open class AckermannBenchmark {
 
 
     @Benchmark
-    fun valhallaInt(bh: Blackhole) = valhalla.ackermann.IntKt.heavyActionInt(JmhComplexNumberConsumer(bh))
+    fun valhallaJavaInt(bh: Blackhole) = valhalla.ackermann.java.IntKt.heavyActionInt(JmhComplexNumberConsumer(bh))
 
     @Benchmark
-    fun valhallaFloat(bh: Blackhole) = valhalla.ackermann.FloatKt.heavyActionFloat(JmhComplexNumberConsumer(bh))
+    fun valhallaJavaFloat(bh: Blackhole) = valhalla.ackermann.java.FloatKt.heavyActionFloat(JmhComplexNumberConsumer(bh))
 
     @Benchmark
-    fun valhallaLong(bh: Blackhole) = valhalla.ackermann.LongKt.heavyActionLong(JmhComplexNumberConsumer(bh))
+    fun valhallaJavaLong(bh: Blackhole) = valhalla.ackermann.java.LongKt.heavyActionLong(JmhComplexNumberConsumer(bh))
 
     @Benchmark
-    fun valhallaDouble(bh: Blackhole) = valhalla.ackermann.DoubleKt.heavyActionDouble(JmhComplexNumberConsumer(bh))
+    fun valhallaJavaDouble(bh: Blackhole) = valhalla.ackermann.java.DoubleKt.heavyActionDouble(JmhComplexNumberConsumer(bh))
+
+    @Benchmark
+    fun valhallaKotlinInt(bh: Blackhole) = valhalla.ackermann.kotlin.heavyActionInt(JmhComplexNumberConsumer(bh))
+
+    @Benchmark
+    fun valhallaKotlinFloat(bh: Blackhole) = valhalla.ackermann.kotlin.heavyActionFloat(JmhComplexNumberConsumer(bh))
+
+    @Benchmark
+    fun valhallaKotlinLong(bh: Blackhole) = valhalla.ackermann.kotlin.heavyActionLong(JmhComplexNumberConsumer(bh))
+
+    @Benchmark
+    fun valhallaKotlinDouble(bh: Blackhole) = valhalla.ackermann.kotlin.heavyActionDouble(JmhComplexNumberConsumer(bh))
 }

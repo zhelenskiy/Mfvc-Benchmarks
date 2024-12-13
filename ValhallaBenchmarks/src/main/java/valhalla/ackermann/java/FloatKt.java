@@ -1,9 +1,9 @@
-package valhalla.ackermann;
+package valhalla.ackermann.java;
 
 import shared.ComplexNumberConsumer;
 import shared.ComplexNumberPrinter;
 
-import static valhalla.ackermann.ComplexFloat.*;
+import static valhalla.ackermann.java.ComplexFloat.*;
 value record ComplexFloat(float real, float imaginary) {
     @Override
     public String toString() {

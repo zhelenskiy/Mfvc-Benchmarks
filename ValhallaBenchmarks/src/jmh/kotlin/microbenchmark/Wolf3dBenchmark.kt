@@ -82,8 +82,15 @@ open class Wolf3dBenchmark {
 
     
     @Benchmark
-    fun valhallaFloat(bh: Blackhole) = valhalla.rendering.float_.Runner.heavyAction(makeGraphics(bh))
+    fun valhallaJavaFloat(bh: Blackhole) = valhalla.rendering.java.float_.Runner.heavyAction(makeGraphics(bh))
 
     @Benchmark
-    fun valhallaDouble(bh: Blackhole) = valhalla.rendering.double_.Runner.heavyAction(makeGraphics(bh))
+    fun valhallaJavaDouble(bh: Blackhole) = valhalla.rendering.java.double_.Runner.heavyAction(makeGraphics(bh))
+
+    
+    @Benchmark
+    fun valhallaKotlinFloat(bh: Blackhole) = valhalla.rendering.kotlin.heavyActionFloat(makeGraphics(bh))
+
+    @Benchmark
+    fun valhallaKotlinDouble(bh: Blackhole) = valhalla.rendering.kotlin.heavyActionDouble(makeGraphics(bh))
 }

@@ -1,4 +1,4 @@
-package valhalla.rendering.double_;
+package valhalla.rendering.java.float_;
 
 import kotlin.ranges.RangesKt;
 import shared.AbstractGraphics;
@@ -15,18 +15,18 @@ public final class Runner {
         return CommonKt.getWorldMap()[(int)point.x()][(int)point.y()] == 0;
     }
 
-    static Vector2 div(double $this$div, Vector2 vector) {
+    static Vector2 div(float $this$div, Vector2 vector) {
         return new Vector2($this$div / vector.x(), $this$div / vector.y());
     }
 
     public static void heavyAction(AbstractGraphics graphics) {
-        Point2 pos = new Point2(22.0, 12.0);
-        Vector2 dir = new Vector2(-1.0, 0.0);
-        Vector2 plane = new Vector2(0.0, 0.66);
-        final double fps = 10.0;
-        final double frameTime = (double)1 / fps;
-        final double moveSpeed = frameTime * 0.5;
-        final double rotSpeed = frameTime * 0.3;
+        Point2 pos = new Point2(22.0f, 12.0f);
+        Vector2 dir = new Vector2(-1.0f, 0.0f);
+        Vector2 plane = new Vector2(0.0f, 0.66f);
+        final float fps = 10.0f;
+        final float frameTime = (float)1 / fps;
+        final float moveSpeed = frameTime * 0.5f;
+        final float rotSpeed = frameTime * 0.3f;
 
         for(int i = 0; i < MicrobenchmarkRotations; ++i) {
             drawScene(pos, dir, plane, graphics);
@@ -56,29 +56,29 @@ public final class Runner {
 
     private static void drawScene(Point2 pos, Vector2 dir, Vector2 plane, AbstractGraphics g) {
         for (int x = 0; x < CommonKt.screenWidth; x++) {
-            double cameraX = 2 * x / (double)CommonKt.screenHeight - 1; //x-coordinate in camera space
+            float cameraX = 2 * x / (float)CommonKt.screenHeight - 1; //x-coordinate in camera space
             Vector2 rayDir = dir.plus(plane.times(cameraX));
             Location mapLocation = pos.toLocation();
             Vector2 sideDist;
-            Vector2 deltaDist = div(1.0, rayDir.abs());
-            double perpWallDist;
+            Vector2 deltaDist = div(1.0f, rayDir.abs());
+            float perpWallDist;
             Vector2 step;
             int hit = 0;
             int side = 0;
             
             if (rayDir.x() < 0) {
-                step = new Vector2((double)-1, 0.0);
+                step = new Vector2((float)-1, 0.0f);
                 sideDist = pos.toVector().minus(mapLocation.toVector()).xProjection().times(deltaDist.x());
             } else {
-                step = new Vector2((double)1, 0.0);
-                sideDist = mapLocation.toVector().plus(new Vector2(1.0, 0.0)).minus(pos.toVector()).xProjection().times(deltaDist.x());
+                step = new Vector2((float)1, 0.0f);
+                sideDist = mapLocation.toVector().plus(new Vector2(1.0f, 0.0f)).minus(pos.toVector()).xProjection().times(deltaDist.x());
             }
             if (rayDir.y() < 0) {
-                step = step.plus(new Vector2(0.0, (double) -1));
+                step = step.plus(new Vector2(0.0f, (float) -1));
                 sideDist = sideDist.plus(pos.toVector().minus(mapLocation.toVector()).yProjection().times(deltaDist.y()));
             } else {
-                step = step.plus(new Vector2(0.0, (double) 1));
-                sideDist = sideDist.plus(mapLocation.toVector().plus(new Vector2(0.0, 1.0)).minus(pos.toVector()).yProjection().times(deltaDist.y()));
+                step = step.plus(new Vector2(0.0f, (float) 1));
+                sideDist = sideDist.plus(mapLocation.toVector().plus(new Vector2(0.0f, 1.0f)).minus(pos.toVector()).yProjection().times(deltaDist.y()));
             }
             while (hit == 0) {
                 if (sideDist.x() < sideDist.y()) {

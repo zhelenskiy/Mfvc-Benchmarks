@@ -1,9 +1,9 @@
-package valhalla.ackermann;
+package valhalla.ackermann.java;
 
 import shared.ComplexNumberConsumer;
 import shared.ComplexNumberPrinter;
 
-import static valhalla.ackermann.ComplexLong.*;
+import static valhalla.ackermann.java.ComplexLong.*;
 value record ComplexLong(long real, long imaginary) {
     @Override
     public String toString() {
